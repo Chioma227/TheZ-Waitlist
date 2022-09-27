@@ -5,17 +5,15 @@
     --navLink: rgb(53, 52, 52);
     --icon-bg: rgb(212, 212, 212);
     --social-icon: rgb(95, 95, 95);
-    --logo: url(/src/images/LogoDark.png);
 }
 
 [data-theme='dark']{
-    --background: rgb(32, 32, 32);
-    --header: rgb(167, 167, 238);
+    --background:#121212;
+    --header: #fff;
     --text: rgb(187, 187, 187);
     --navLink: rgb(187, 187, 187);
     --icon-bg: rgb(61, 61, 61);
     --social-icon: rgb(218, 218, 218);
-    --logo: url(/src/images/LogoLight.png);
 }
 .hero{
     background-color: var(--background);

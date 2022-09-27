@@ -1,13 +1,12 @@
 import React from "react";
-// import NavBar from "../components/Navbar/Navbar";
-import image from "../images/Hero.png";
+import lightThemeHeroImg from "../images/lightThemeMockup.png";
+import darkThemeHeroImg from "../images/darkThemeMockup.png";
 
-const SectionOne = () => {
+const SectionOne = ({theme}) => {
    
   return (
     <>
       <main>
-        {/* <NavBar /> */}
         <div className=" mt-[20px] lg:pl-[7rem] lg:px-0 md:px-0 sm:px-12 md:pl-[2.5rem] px-6">
           <article className="flex items-center transition-all">
             <section className="flex-1 pb-16 ">
@@ -61,7 +60,7 @@ const SectionOne = () => {
 
             {/* hero image */}
             <section className="md:block hidden lg:w-[32rem] md:w-[30rem]">
-              <img src={image} alt="" className="w-[100%]" />
+              <img src={theme === "light" ? lightThemeHeroImg : darkThemeHeroImg} alt="" className="w-[100%]" />
             </section>
           </article>
         </div>

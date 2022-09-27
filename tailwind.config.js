@@ -17,6 +17,9 @@ module.exports = {
         },
         grey:{
           "100":"#6a6969"
+        },
+        lightBlack:{
+          "100":"#121212"
         }
       },
       fontFamily: {
