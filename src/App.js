@@ -14,7 +14,7 @@ export default function App() {
   };
   return (
     <div>
-      <div className="hero h-fit pb-16" data-theme={theme}>
+      <div className="hero h-screen pb-16" data-theme={theme}>
         <NavBar  theme={theme}/>
         <Home toggleTheme={toggleTheme} theme={theme}/>
       </div>
