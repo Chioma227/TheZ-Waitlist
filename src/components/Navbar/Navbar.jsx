@@ -14,8 +14,8 @@ const NavBar = ({  theme }) => {
               <img
                 src={theme === "light" ? lightThemeLogo : darkThemeLogo}
                 alt=""
-                style={{ transition: "0.6s" }}
-                className="lg:w-[47%] sm:w-[100px] w-[70px]"
+                // style={{ transition: "0.6s" }}
+                className="logo lg:w-[47%] sm:w-[100px] w-[70px]"
               />
             </a>
             <div className="flex">
