@@ -1,21 +1,21 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import image from "../../images/Logo.png";
+import lightThemeLogo from "../../images/LogoDark.png";
+import darkThemeLogo from "../../images/LogoLight.png";
 import { useState } from "react";
 
-export default function NavBar() {
+ const NavBar = ({ toggleTheme, theme })=> {
   const [navbar, setNavbar] = useState(false);
-
   return (
-    <nav className="w-full bg-white lg:px-[7rem]  md:px-8 sm:px-12 px-6">
+    <nav className="nav-bg w-full lg:px-[7rem] md:py-9 py-4   md:px-8 sm:px-12 px-6">
       <div className="mx-auto  justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="" aria-disabled>
+            <a>
               <img
-                src={image}
+                src={theme ==="light" ? darkThemeLogo : lightThemeLogo}
                 alt=""
-                className="lg:w-2/5 sm:w-[100px] w-[70px]"
+                style={{ transition:"0.6s"}}
+                className="lg:w-[47%] sm:w-[100px] w-[70px]"
               />
             </a>
             <div className="md:hidden">
@@ -58,36 +58,43 @@ export default function NavBar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center grid grid-cols-2 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`justify-self-center grid grid-cols-2 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
             <ul className="items-center justify-center space-y-5 md:flex lg:space-x-[80px] md:space-x-[45px] md:space-y-0">
-              <li className="text-gray-800 md:text-base text-sm transition-all">
-                <a href="" aria-disabled className="hover:text-gray-900 hover:no-underline">
+              <li className="navLink md:text-base text-sm transition-all">
+                <a
+                  href=""
+                  aria-disabled
+                  className="hover:text-gray-300 hover:no-underline"
+                >
                   Home
                 </a>
               </li>
-              <li className="text-gray-800 md:text-base text-sm  transition-all">
-                <a href=""
-                aria-disabled
-                  className="hover:text-gray-900 hover:no-underline"
+              <li className="navLink md:text-base text-sm  transition-all">
+                <a
+                  href=""
+                  aria-disabled
+                  className="hover:text-gray-300 hover:no-underline"
                 >
-                  About App
+                  AboutApp
                 </a>
               </li>
-              <li className="text-gray-800 md:text-base text-sm  transition-all">
-                <a href=""
-                aria-disabled
-                  className="hover:text-gray-900 hover:no-underline"
+              <li className="navLink md:text-base text-sm  transition-all">
+                <a
+                  href=""
+                  aria-disabled
+                  className="hover:text-gray-300 hover:no-underline"
                 >
                   Testimonials
                 </a>
               </li>
-              <li className="text-gray-800 md:text-base text-sm  transition-all">
-                <a href=""
-                aria-disabled
-                  className="hover:text-gray-900 hover:no-underline"
+              <li className="navLink md:text-base text-sm  transition-all">
+                <a
+                  href=""
+                  aria-disabled
+                  className="hover:text-gray-300 hover:no-underline"
                 >
                   FAQs
                 </a>
@@ -99,8 +106,18 @@ export default function NavBar() {
                   rel="noreferrer"
                   className="bg-darkblue-100 hover:no-underline text-white md:text-base text-sm md:px-4 xs:px-[10px] py-2 rounded-md"
                 >
-                  Join Waitlist
+                  JoinWaitlist
                 </a>
+              </div>
+              <div className="theme-div">
+                {" "}
+                <button onClick={toggleTheme} className="btn" style={{transition:"0.6s"}}>
+                  {theme === "light" ? (
+                    <i className="fas fa-moon text-darkblue-100 text-3xl"></i>
+                    ) : (
+                      <i class="fas fa-sun text-gray-300 text-3xl"></i>
+                  )}
+                </button>
               </div>
             </ul>
           </div>
@@ -109,3 +126,4 @@ export default function NavBar() {
     </nav>
   );
 }
+export default NavBar
