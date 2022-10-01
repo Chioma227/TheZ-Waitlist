@@ -6,7 +6,7 @@ const SectionOne = ({ toggleTheme, theme }) => {
   return (
     <>
       <main>
-        <div className=" mt-[20px] lg:pl-[7rem] lg:px-0 md:px-0 sm:px-12 md:pl-[2.5rem] px-6">
+        <div className=" md:mt-[20px] mt-[25px] lg:pl-[7rem] lg:px-0 md:px-0 sm:px-12 md:pl-[2.5rem] px-6">
           <article className="flex items-center transition-all">
             <section className="flex-1">
               <h1 className="heading text-darkblue-100 font-bold lg:text-[3.2rem] md:text-[2.5rem] sm:text-[2.8rem] text-[1.8rem] lg:mb-5 md:mb-3 sm:mb-4 mb-3 select-none">
@@ -38,7 +38,7 @@ const SectionOne = ({ toggleTheme, theme }) => {
               />
             </section>
           </article>
-          <article className="flex items-end justify-between md:mt-0 mt-[6rem]">
+          <article className="flex items-end justify-between md:mt-0 mt-[7rem]">
             <section >
               <div className="flex items-center gap-2">
                 <p className="text text-grey-100 md:text-[1.3rem]">
