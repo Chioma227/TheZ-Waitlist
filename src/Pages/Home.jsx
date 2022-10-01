@@ -9,10 +9,10 @@ const SectionOne = ({ toggleTheme, theme }) => {
         <div className=" md:mt-[20px] mt-[25px] lg:pl-[7rem] lg:px-0 md:px-0 sm:px-12 md:pl-[2.5rem] px-6">
           <article className="flex items-center transition-all">
             <section className="flex-1">
-              <h1 className="heading text-darkblue-100 font-bold lg:text-[3.2rem] md:text-[2.5rem] sm:text-[2.8rem] text-[1.8rem] lg:mb-5 md:mb-3 sm:mb-4 mb-3 select-none">
+              <h1 className="heading text-darkblue-100 font-bold lg:text-[3.2rem] md:text-[2.5rem] sm:text-[2.8rem] text-[1.8rem] lg:mb-5 md:mb-3 sm:mb-4 mb-5 select-none">
                 Sell Your Cryptocurrency Fast and With Ease
               </h1>
-              <p className="text lg:text-[1.3rem] md:text-[1rem] sm:text-[1.3rem] text-[1rem] text-grey-100 md:w-[90%] lg:mb-9 md:mb-3 sm:mb-4 mb-7">
+              <p className="text lg:text-[1.3rem] md:text-[1rem] sm:text-[1.3rem] text-[1rem] text-grey-100 md:w-[90%] lg:mb-9 md:mb-3 sm:mb-4 mb-8">
                 Trading has never been this seamless. Use TheZ Finance platform
                 to sell your Bitcoin, Ethereum and Tether and get your payment
                 within minutes.
@@ -22,7 +22,7 @@ const SectionOne = ({ toggleTheme, theme }) => {
                   href="https://forms.gle/vkcUiyyeVZc3awmm7"
                   target="_blank"
                   rel="noreferrer"
-                  className="self-center bg-darkblue-100 mb-4 hover:no-underline   text-white text-base mt-6  rounded-sm px-4 py-2 text-bold transition-all"
+                  className="self-center bg-darkblue-100 mb-4 hover:no-underline   text-white text-base mt-7  rounded-sm px-4 py-2 text-bold transition-all"
                 >
                   Join Waitlist
                 </a>
