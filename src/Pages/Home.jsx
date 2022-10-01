@@ -38,7 +38,7 @@ const SectionOne = ({ toggleTheme, theme }) => {
               />
             </section>
           </article>
-          <article className="flex items-end justify-between md:mt-0 mt-14">
+          <article className="flex items-end justify-between md:mt-0 mt-[6rem]">
             <section >
               <div className="flex items-center gap-2">
                 <p className="text text-grey-100 md:text-[1.3rem]">
