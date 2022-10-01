@@ -9,7 +9,7 @@ const SectionOne = ({ toggleTheme, theme }) => {
         <div className=" md:mt-[20px] mt-[25px] lg:pl-[7rem] lg:px-0 md:px-0 sm:px-12 md:pl-[2.5rem] px-6">
           <article className="flex items-center transition-all">
             <section className="flex-1">
-              <h1 className="heading text-darkblue-100 font-bold lg:text-[3.2rem] md:text-[2.5rem] sm:text-[2.8rem] text-[1.8rem] lg:mb-5 md:mb-3 sm:mb-4 mb-5 select-none">
+              <h1 className="heading text-darkblue-100 font-bold lg:text-[3.2rem] md:text-[2.5rem] sm:text-[2.8rem] text-[1.8rem] lg:mb-5 md:mb-3 sm:mb-4 mb-4 select-none">
                 Sell Your Cryptocurrency Fast and With Ease
               </h1>
               <p className="text lg:text-[1.3rem] md:text-[1rem] sm:text-[1.3rem] text-[1rem] text-grey-100 md:w-[90%] lg:mb-9 md:mb-3 sm:mb-4 mb-8">
